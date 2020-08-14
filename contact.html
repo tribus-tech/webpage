@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Tribus Techonology</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/contact.css" type="text/css">
+  <script src="scripts/contact.js"></script>
+  <!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif] onsubmit="return validation()"-->
+</head>
+
+<body>
+  <div id="form_sample" class="container">
+    <div id="error_message"></div>
+    <form name="contact-form" id="contact-form"  onsubmit="return validation()" action="mail.php" method="POST" enctype=”multipart/form-data”>
+
+      <label for="fname">Nome:</label>
+      <input type="text" id="fname" name="fname" placeholder="Nome completo..">
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" placeholder="Email">
+
+      <label for="service">Serviço:</label>
+      <select id="service" name="service">
+        <option value="itsm">Gestão de Serviços TI</option>
+        <option value="web">Desenvolvimento Web</option>
+        <option value="graph">Design Gráfico</option>
+      </select>
+
+      <label for="subject">Como podemos ajudar ?</label>
+      <textarea id="subject" name="subject" placeholder="Descreva como podemos ajudá-lo.."
+        style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+
+</html>
